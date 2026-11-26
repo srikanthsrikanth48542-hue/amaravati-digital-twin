@@ -31,7 +31,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
     # --- AQI FIX - ADDED ---
-aqi = 162
+
 if aqi <= 50:
     label, color = "Good", "green"
 elif aqi <= 100:
