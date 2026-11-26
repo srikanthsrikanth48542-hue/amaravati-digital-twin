@@ -29,28 +29,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
-    # --- AQI FIX - ADDED ---
-
-if aqi <= 50:
-    label, color = "Good", "green"
-elif aqi <= 100:
-    label, color = "Moderate", "#FFC107"
-elif aqi <= 150:
-    label, color = "Unhealthy for Sensitive Groups", "orange"
-elif aqi <= 200:
-    label, color = "Unhealthy", "red"
-else:
-    label, color = "Very Unhealthy", "darkred"
-st.markdown(f"""
-<div style="background:#FDECEA; padding:12px; border-radius:12px; border-left:5px solid {color}">
-<b>AQI: {aqi} - {label}</b><br>
-PM2.5: 74 | PM10: 76<br>
-Everyone may feel effects. Limit outdoor activity.<br>
-<small>Updated: 26 Nov 2026 | Source: CPCB / Demo Data</small>
-</div>
-""", unsafe_allow_html=True)
-
+st.title("🏙️ Amaravati Mitra")
 # --- HEADER ---
 st.title("🌆 Amaravati Mitra")
 st.markdown("<p style='text-align:center; color:gray;'>AI Citizen Assistant | Amaravati Smart City Digital Twin</p>", unsafe_allow_html=True)
