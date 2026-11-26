@@ -26,6 +26,10 @@ st.markdown("""
     h1 {font-size: 28px !important; text-align: center;}
     h3 {font-size: 18px !important;}
     .metric-card {background: #F0F7F4; padding: 15px; border-radius: 15px; text-align: center; border: 1px solid #D6E8E0;}
+}
+</style>
+""", unsafe_allow_html=True)
+
     # --- AQI FIX - ADDED ---
 aqi = 162
 if aqi <= 50:
@@ -45,11 +49,6 @@ PM2.5: 74 | PM10: 76<br>
 Everyone may feel effects. Limit outdoor activity.<br>
 <small>Updated: 26 Nov 2026 | Source: CPCB / Demo Data</small>
 </div>
-""", unsafe_allow_html=True)
-    @media (max-width: 600px) {
-        .block-container {padding: 0.5rem !important;}
-    }
-</style>
 """, unsafe_allow_html=True)
 
 # --- HEADER ---
